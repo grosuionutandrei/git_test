@@ -1,0 +1,54 @@
+#bubble-wraper{
+width: 100%;
+height: 100%;
+position: fixed;
+bottom: 0px;
+overflow: hidden;
+pointer-events: none;
+border: 1px solid pink;
+}
+.bubble{
+    width:max(300px,30vw);
+    height: max(300px,30vW);
+    background-color: blue;
+    border-radius:50%;
+    position: absolute;
+    top:100%;
+    left:50%;
+    animation: wave  2s ease-in-out infinite;
+}
+@keyframes wave {
+    from,to{
+        transform: translate(-50%,0);
+    }
+    50%{
+        transform: translate(-50%,-20%);
+    }
+}
+
+#myCanvas{
+
+  border: 2px solid black;
+}
+
+#house{
+    position:absolute;
+    z-index: 100;
+    /* border: 2px solid black; */
+    top: 150px;
+    left:200px;
+}
+#fence{
+    position:absolute;
+    top: 500px;
+    left:10px;
+    /* border:1px solid black; */
+    z-index: 101;
+}
+#fenceRoof{
+    position: absolute;
+    top: 479px;
+    left: 10px;
+    z-index: 102;
+  
+}
